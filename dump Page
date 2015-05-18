@@ -1,0 +1,235 @@
+<li><a class="btn btn-success" data-toggle="modal" data-target="#SelectAccountModal">SIGN UP 2</a></li>
+<section id="modals-wrapper">
+    <div class="modal fade modal-manip" id="LogonModals" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 style="color:#074f66" class="modal-title" id="exampleModalLabel">Login to your softpay account</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <!-- <label for="email" class="control-label">Email:</label> -->
+                <input type="text" class="form-control" id="email" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <!-- <label for="password" class="control-label">Password:</label> -->
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="small-form-category">
+                <div class="checkbox pull-left">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <p class="pull-right"><a href="#">Forgot your password?</a></p>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            <a href="dashboard.html" class="btn btn-cta-primary">Login</a>
+          </div>
+          <div class="to-signup">
+            <p><a href="#">Don't have an account? SignUp Here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-manip" id="SignupModals" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md no-padding">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 style="color:#074f66; padding-left:15px;" class="modal-title" id="exampleModalLabel">Signup for your softpay account</h5>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div class="form-group col-md-6">
+                <!-- <label for="email" class="control-label">Firstname:</label> -->
+                <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+              </div>
+              <div class="form-group col-md-6">
+                <!-- <label for="email" class="control-label">Lastname:</label> -->
+                <input type="text" class="form-control" id="lastname" placeholder="Lastname">
+              </div>
+              <div class="form-group col-md-12">
+                <!-- <label for="email" class="control-label">Email:</label> -->
+                <input type="text" class="form-control" id="email" placeholder="Email Address">
+              </div>
+              <div class="form-group col-md-12">
+                <!-- <label for="email" class="control-label">Email:</label> -->
+                <input type="text" class="form-control" id="phone" placeholder="Phone No">
+              </div>
+              <div class="form-group col-md-12">
+                <!-- <label for="password" class="control-label">Password:</label> -->
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="clearfix"></div>
+              <div class="small-form-category">
+                <div class="checkbox pull-left" style="padding-left:15px;">
+                    <label><input type="checkbox"><p class="">By Checking this you agree to all our terms and conditions.</p></label>
+                    
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer" style="padding-right:30px;">
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            <a href="selectAccount.html" class="btn btn-success">SIGNUP</a>
+          </div>
+          <div class="to-signup">
+            <p><a href="#">Already using Softpay? Login Here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-manip" id="SignupModals2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md no-padding">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 style="color:#074f66; padding-left:15px;" class="modal-title" id="exampleModalLabel">Signup for your softpay account</h5>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div class="form-group col-md-6">
+                <!-- <label for="email" class="control-label">Firstname:</label> -->
+                <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+              </div>
+              <div class="form-group col-md-6">
+                <!-- <label for="email" class="control-label">Lastname:</label> -->
+                <input type="text" class="form-control" id="lastname" placeholder="Lastname">
+              </div>
+              <div class="form-group col-md-12">
+                <!-- <label for="email" class="control-label">Email:</label> -->
+                <input type="text" class="form-control" id="email" placeholder="Email Address">
+              </div>
+              <div class="form-group col-md-12">
+                <!-- <label for="email" class="control-label">Email:</label> -->
+                <input type="text" class="form-control" id="phone" placeholder="Phone No">
+              </div>
+              <div class="form-group col-md-12">
+                <!-- <label for="password" class="control-label">Password:</label> -->
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="clearfix"></div>
+              <div class="small-form-category">
+                <div class="checkbox pull-left" style="padding-left:15px;">
+                    <label><input type="checkbox"><p class="">By Checking this you agree to all our terms and conditions.</p></label>
+                    
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer" style="padding-right:30px;">
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            <a href="" class="btn btn-info" data-dismiss="modal" data-toggle="modal" data-target="#SelectAccountModal">Go Back</a>
+            <a href="selectAccount.html" class="btn btn-success">SIGNUP</a>
+          </div>
+          <div class="to-signup">
+            <p><a href="#">Already using Softpay? Login Here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-manip" id="SelectAccountModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg no-padding">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 style="color:#074f66; padding-left:15px;" class="modal-title" id="exampleModalLabel">Select an account to get started</h5>
+          </div>
+          <div class="col-sm-6">
+            <div class="modal-body">
+              <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Personal Account
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                    </div>
+                    <div class="panel-footer">
+                        <a class="btn btn-primary pull-right" data-dismiss="modal" data-toggle="modal" data-target="#SignupModals2">Create Personal Account</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="modal-body">
+              <div class="panel panel-danger">
+                  <div class="panel-heading">
+                      Merchant Account
+                  </div>
+                  <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                  </div>
+                  <div class="panel-footer">
+                      <a class="btn btn-danger pull-right" data-dismiss="modal" data-toggle="modal" data-target="#SignupMerchantModals2">Create Merchant Account</a>
+                      <div class="clearfix"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="to-signup">
+            <p><a href="#">Already using Softpay? Login Here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-manip" id="SignupMerchantModals2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg no-padding">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 style="color:#074f66; padding-left:15px;" class="modal-title" id="exampleModalLabel">Signup for your softpay account</h5>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div class="form-group col-md-4">
+                <!-- <label for="email" class="control-label">Firstname:</label> -->
+                <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+              </div>
+              <div class="form-group col-md-4">
+                <!-- <label for="email" class="control-label">Lastname:</label> -->
+                <input type="text" class="form-control" id="lastname" placeholder="Lastname">
+              </div>
+              <div class="form-group col-md-4">
+                <!-- <label for="email" class="control-label">Email:</label> -->
+                <input type="text" class="form-control" id="phone" placeholder="Phone No">
+              </div>
+              <div class="form-group col-md-12">
+                <!-- <label for="email" class="control-label">Email:</label> -->
+                <input type="text" class="form-control" id="email" placeholder="Email Address">
+              </div>
+              <div class="form-group col-md-12">
+                <!-- <label for="email" class="control-label">Email:</label> -->
+                <input type="text" class="form-control" id="phone" placeholder="Phone No">
+              </div>
+              <div class="form-group col-md-12">
+                <!-- <label for="password" class="control-label">Password:</label> -->
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="clearfix"></div>
+              <div class="small-form-category">
+                <div class="checkbox pull-left" style="padding-left:15px;">
+                    <label><input type="checkbox"><p class="">By Checking this you agree to all our terms and conditions.</p></label>
+                    
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer" style="padding-right:30px;">
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            <a href="" class="btn btn-info" data-dismiss="modal" data-toggle="modal" data-target="#SelectAccountModal">Go Back</a>
+            <a href="selectAccount.html" class="btn btn-success">SIGNUP</a>
+          </div>
+          <div class="to-signup">
+            <p><a href="#">Already using Softpay? Login Here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
