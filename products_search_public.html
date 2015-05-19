@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Softpay</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="aadewumi@softalliance.com" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/select.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
+
+<body data-spy="scroll">
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header col-sm-3">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="color:#EFEFEF;font-size:30px;padding-left:50px;" class="navbar-brand" href="dashboard.html">Soft<span style="color:#eebf3f">Pay</span></a>
+            </div>
+            <!-- /.navbar-header -->
+            <div class="search-bar col-sm-5">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-md" placeholder="Search services, options and payment codes..." />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-md" style="background-color:#2E4B6B;outline:#2E4B6B;border-color:#28415C;" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>              
+            </div>
+            <div style="width:100%">
+              <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown pull-right">
+                    <a href="signup.html" class="btn btn-success pull-right" style="height:30px;">Signup</a>
+                    <a href="login.html" class="btn btn-info pull-right" style="margin-right:5px;height:30px;">Login</a>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+              </ul>
+            </div>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation" style="overflow:auto;">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-shopping-cart fa-fw"></i> Shop</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-money fa-fw"></i> Pay Bills<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Electricity Bill</a>
+                                </li>
+                                <li>
+                                    <a href="#">Waste Bill</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-phone fa-fw"></i> Load Airtime<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">MTN</a>
+                                </li>
+                                <li>
+                                    <a href="#">Globacom</a>
+                                </li>
+                                <li>
+                                    <a href="#">Etisalat</a>
+                                </li>
+                                <li>
+                                    <a href="#">Airtel</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-credit-card fa-fw"></i> Make Payments</a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-credit-card fa-fw"></i> Receive Money</a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-question-circle fa-fw"></i> Faq</a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> Contact Us</a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="clearfix"></div>
+                    <h2 class="page-header pull-left">Welcome</h2>
+                </div>
+
+                <!-- /.col-lg-12 -->
+            </div>
+             <!-- /.row -->
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" id="products-panel">
+                            <div id="products_search" class="row">
+                            	<div class="col-md-9">
+                            		<div class="row">
+	                            		<div class="col-xs-4 pull-left">
+	                            			<img width="100%" height="100%" style="border:solid 1px #EEE;" src="assets/images/products/watch.jpeg" />
+	                            			<button class="btn btn-danger" style="margin-top:3px;">&#8358;85,000</button>
+		                            	</div>
+		                            	<div class="col-xs-8">
+		                            		<h4 style="color:#4A4A4A">Product Description</h4>
+		                            		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+		                            		<div class="row">
+			                            		<div class="col-md-12 pull-right">
+			                            			<button class="btn btn-cta-primary pull-right">Make Payment</button>
+			                            			<button style="margin-right:3px;" class="btn btn-info pull-right">Read More</button>
+			                            		</div>
+			                            	</div>
+		                            	</div>
+		                            </div>
+		                            <hr/>
+		                            <div class="row">
+	                            		<div class="col-xs-4 pull-left">
+	                            			<img width="100%" height="100%" style="border:solid 1px #EEE;" src="assets/images/products/dstv.jpg" />
+	                            			<div class="absolute" title="This product is verified" id="verified-products" style=""><i class="fa fa-check"></i></div>
+	                            			<button class="btn btn-danger"  style="margin-top:3px;">&#8358;15,000</button>
+		                            	</div>
+		                            	<div class="col-xs-8">
+		                            		<h4 style="color:#4A4A4A">Product Description</h4>
+		                            		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+
+		                            		<div class="row">
+			                            		<div class="col-md-12" style="width:100%;margin-bottom:8px;">
+			                            			<select id="select-product" style="width:100%;">
+			                            				<option value="">Select a Product Category</option>
+			                            				<option value="">ACCESS BOUQUET (₦ 1,800.00)</option>
+														<option value="">ACCESS BOUQUET + EXTRA VIEW (₦ 3,960.00)</option>
+														<option value="">ACCESS BOUQUET + ASIA (₦ 6,600.00)</option>
+														<option value="">ACCESS BOUQUET + DUAL (₦ 3,960.00)</option>
+														<option value="">ACCESS  BOUQUET + FRENCH (₦ 7,550.00)</option>
+														<option value="">ACCESS BOUQUET + PVR ACCESS (₦ 3,960.00)</option>
+														<option value="">ACCESS BOUQUET + GERMAN (₦ 5,440.00)</option>
+														<option value="">ASIAN BOUQUET (₦ 4,800.00)</option>
+														<option value="">ASIAN BOUQUET + DUAL (₦ 5,800.00)</option>
+														<option value="">ASIAN BOUQUET + PVR ACCESS (₦ 5,800.00)</option>
+														<option value="">ASIAN BOUQUET + EXTRA VIEW (₦ 5,800.00)</option>
+														<option value="">BOX OFFICE</option>
+														<option value="">FAMILY + EXTRA VIEW (₦ 5,760.00)</option>
+														<option value="">FAMILY + FRENCH (₦ 6,120.00)</option>
+														<option value="">FAMILY BOUQUET (₦ 3,600.00)</option>
+														<option value="">FAMILY + ASIA (₦ 8,400.00)</option>
+														<option value="">FAMILY + DUAL (₦ 5,760.00)</option>
+														<option value="">FAMILY + PVR ACCESS (₦ 5,760.00)</option>
+														<option value="">FAMILY + GERMAN (₦ 6,640.00)</option>
+														<option value="">COMPACT PLUS BOUQUET (₦ 9,420.00)</option>
+														<option value="">COMPACT PLUS + EXTRA VIEW (₦ 11,580.00)</option>
+														<option value="">COMPACT PLUS + ASIA (₦ 14,220.00)</option>
+			                            			</select>
+			                            		</div>
+			                            		<div class="col-md-12 pull-right">
+			                            			<button class="btn btn-cta-primary pull-right">Make Payment</button>
+			                            			<button style="margin-right:3px;" class="btn btn-info pull-right">Read More</button>
+			                            		</div>
+			                            	</div>
+		                            	</div>
+		                            </div>
+		                            <hr/>
+                                    <div class="row">
+                                        <div class="col-xs-4 pull-left">
+                                            <img width="100%" height="100%" id="search-res-images" style="border:solid 1px #EEE;" src="assets/images/merchant.png" />
+                                            
+                                            
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 style="color:#4A4A4A">Product Description</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+
+                                            <div class="row">
+                                                <div class="col-md-12 pull-right">
+                                                    <button class="btn btn-cta-primary pull-right">View merchant store</button>
+                                                    <button style="margin-right:3px;" class="btn btn-info pull-right">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr/>
+		                            <div class="row">
+	                            		<div class="col-xs-4 pull-left">
+	                            			<img width="100%" height="100%" style="border:solid 1px #EEE;" src="assets/images/products/beauty.jpg" />
+	                            			<button class="btn btn-danger"  style="margin-top:3px;">&#8358;5,000</button>
+		                            	</div>
+		                            	<div class="col-xs-8">
+		                            		<h4 style="color:#4A4A4A">Product Description</h4>
+		                            		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+		                            		<div class="row">
+			                            		<div class="col-md-12 pull-right">
+			                            			<button class="btn btn-cta-primary pull-right">Make Payment</button>
+			                            			<button style="margin-right:3px;" class="btn btn-info pull-right">Read More</button>
+			                            		</div>
+			                            	</div>
+		                            	</div>
+		                            </div>
+		                            <hr/>
+                            	</div>
+                            	<div class="col-md-3 product-ads">
+                            		<div class="col-md-12"><h5>Related Ads</h5></div>
+                                    <hr/>
+                                    <div class="col-md-12 related-ad">
+                                        <img width="100%" src="assets/images/products/watch2.jpg">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                        <p></p>
+                                        <p><a href="" class="btn btn-info">View Product</a></p>
+                                    </div>
+                                    
+                                    <div class="col-md-12 related-ad">
+                                        <img width="100%" src="assets/images/products/watch3.jpeg">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                        <p></p>
+                                        <p><a href="" class="btn btn-info">View Product</a></p>
+                                    </div>
+                                    
+                                    <div class="col-md-12 related-ad">
+                                        <img width="100%" src="assets/images/products/watch4.jpg">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                        <p></p>
+                                        <p><a href="" class="btn btn-info">View Product</a></p>
+                                    </div>
+                            	</div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+            <!-- /.row -->
+                        <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="assets/js/metisMenu.min.js"></script> 
+    <script type="text/javascript" src="assets/js/select.js"></script>    
+    <script type="text/javascript" src="assets/js/main.js"></script> 
+</body>
+</html>

@@ -318,6 +318,50 @@ a {
     clear: both;
 }
 
+#verified-products {
+    position:absolute;
+    top:0;
+    right:20px;
+    font-size:18px;
+    background-color:green;
+    color:white;padding:5px;
+}
+
+#product-image {
+    width:90%;
+    height: 180px;
+}
+
+#products-panel .product-ads .related-ad {
+    opacity: 0.5;
+    -webkit-transition-delay: 3s;
+    -webkit-transition-duration: 0.6s;
+    -webkit-transition-property: color;
+    -webkit-transition-timing-function: ease-out;
+    transition-delay: 3s;
+    transition-duration: 0.6s;
+    transition-property: color;
+    transition-timing-function: ease-out;
+   
+    border-bottom: solid 1px #D4D4D4;
+    margin-bottom: 10px;
+}
+
+#products-panel .product-ads .related-ad:hover {
+    opacity: 1.0;
+    -webkit-transition-delay: 3s;
+    -webkit-transition-duration: 0.6s;
+    -webkit-transition-property: color;
+    -webkit-transition-timing-function: ease-out;
+    transition-delay: 3s;
+    transition-duration: 0.6s;
+    transition-property: color;
+    transition-timing-function: ease-out;
+}
+
+#search-res-images {
+    max-height: 200px;
+}
 table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc,

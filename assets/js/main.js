@@ -3,8 +3,9 @@ $(function() {
     $('#side-menu').metisMenu();
 
 });
-
 $(document).ready(function() {
-    $('#dataTables-example').DataTable();
+    //$('#dataTables-example').DataTable();
+    $("#select-product").select2();
 
+    
 });

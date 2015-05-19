@@ -291,128 +291,144 @@
 
                 <!-- /.col-lg-12 -->
             </div>
+             <!-- /.row -->
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <!-- /.panel-heading -->
                         <div class="panel-body" id="products-panel">
-                            <div class="col-xs-12">
-                                <a class="btn btn-success pull-right" data-toggle="modal" data-target="#addNewProductModal"><i class="fa fa-plus"></i> Add New Product</a>
-                            </div>
-                            <hr/>
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-6 col-md-3">
-                                    <div class="thumbnail">
-                                        <img id="product-image" src="assets/images/products/gel.jpg" width="150px" height="150px" alt="">
-                                        <div class="caption">
-                                            <h3>Feature Label</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div id="products_search" class="row">
+                            	<div class="col-md-9">
+                            		<div class="row">
+	                            		<div class="col-xs-4 pull-left">
+	                            			<img width="100%" height="100%" style="border:solid 1px #EEE;" src="assets/images/products/watch.jpeg" />
+	                            			<button class="btn btn-danger" style="margin-top:3px;">&#8358;85,000</button>
+		                            	</div>
+		                            	<div class="col-xs-8">
+		                            		<h4 style="color:#4A4A4A">Product Description</h4>
+		                            		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+		                            		<div class="row">
+			                            		<div class="col-md-12 pull-right">
+			                            			<button class="btn btn-cta-primary pull-right">Make Payment</button>
+			                            			<button style="margin-right:3px;" class="btn btn-info pull-right">Read More</button>
+			                            		</div>
+			                            	</div>
+		                            	</div>
+		                            </div>
+		                            <hr/>
+		                            <div class="row">
+	                            		<div class="col-xs-4 pull-left">
+	                            			<img width="100%" height="100%" style="border:solid 1px #EEE;" src="assets/images/products/dstv.jpg" />
+	                            			<div class="absolute" title="This product is verified" id="verified-products" style=""><i class="fa fa-check"></i></div>
+	                            			<button class="btn btn-danger"  style="margin-top:3px;">&#8358;15,000</button>
+		                            	</div>
+		                            	<div class="col-xs-8">
+		                            		<h4 style="color:#4A4A4A">Product Description</h4>
+		                            		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+
+		                            		<div class="row">
+			                            		<div class="col-md-12" style="width:100%;margin-bottom:8px;">
+			                            			<select id="select-product" style="width:100%;">
+			                            				<option value="">Select a Product Category</option>
+			                            				<option value="">ACCESS BOUQUET (₦ 1,800.00)</option>
+														<option value="">ACCESS BOUQUET + EXTRA VIEW (₦ 3,960.00)</option>
+														<option value="">ACCESS BOUQUET + ASIA (₦ 6,600.00)</option>
+														<option value="">ACCESS BOUQUET + DUAL (₦ 3,960.00)</option>
+														<option value="">ACCESS  BOUQUET + FRENCH (₦ 7,550.00)</option>
+														<option value="">ACCESS BOUQUET + PVR ACCESS (₦ 3,960.00)</option>
+														<option value="">ACCESS BOUQUET + GERMAN (₦ 5,440.00)</option>
+														<option value="">ASIAN BOUQUET (₦ 4,800.00)</option>
+														<option value="">ASIAN BOUQUET + DUAL (₦ 5,800.00)</option>
+														<option value="">ASIAN BOUQUET + PVR ACCESS (₦ 5,800.00)</option>
+														<option value="">ASIAN BOUQUET + EXTRA VIEW (₦ 5,800.00)</option>
+														<option value="">BOX OFFICE</option>
+														<option value="">FAMILY + EXTRA VIEW (₦ 5,760.00)</option>
+														<option value="">FAMILY + FRENCH (₦ 6,120.00)</option>
+														<option value="">FAMILY BOUQUET (₦ 3,600.00)</option>
+														<option value="">FAMILY + ASIA (₦ 8,400.00)</option>
+														<option value="">FAMILY + DUAL (₦ 5,760.00)</option>
+														<option value="">FAMILY + PVR ACCESS (₦ 5,760.00)</option>
+														<option value="">FAMILY + GERMAN (₦ 6,640.00)</option>
+														<option value="">COMPACT PLUS BOUQUET (₦ 9,420.00)</option>
+														<option value="">COMPACT PLUS + EXTRA VIEW (₦ 11,580.00)</option>
+														<option value="">COMPACT PLUS + ASIA (₦ 14,220.00)</option>
+			                            			</select>
+			                            		</div>
+			                            		<div class="col-md-12 pull-right">
+			                            			<button class="btn btn-cta-primary pull-right">Make Payment</button>
+			                            			<button style="margin-right:3px;" class="btn btn-info pull-right">Read More</button>
+			                            		</div>
+			                            	</div>
+		                            	</div>
+		                            </div>
+		                            <hr/>
+                                    <div class="row">
+                                        <div class="col-xs-4 pull-left">
+                                            <img width="100%" height="100%" id="search-res-images" style="border:solid 1px #EEE;" src="assets/images/profile-pic-grey.jpg" />
+                                            
+                                            
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 style="color:#4A4A4A">Product Description</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+
                                             <div class="row">
-                                                <div class="col-md-12">
-                                                    <p class="pull-right">
-                                                        <a href="products_edit.html" class="btn btn-info">Edit</a> 
-                                                        <a href="#" class="btn btn-cta-primary">Publish</a> 
-                                                        <a href="#" class="btn btn-danger">Delete</a>
-                                                    </p>
+                                                <div class="col-md-12 pull-right">
+                                                    <button class="btn btn-cta-primary pull-right">View merchant store</button>
+                                                    <button style="margin-right:3px;" class="btn btn-info pull-right">Read More</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-3">
-                                    <div class="thumbnail">
-                                        <img id="product-image" src="assets/images/products/laptop.jpg" width="150px" height="150px" alt="">
-                                        <div class="caption">
-                                            <h3>Feature Label</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p class="pull-right">
-                                                        <a href="products_edit.html" class="btn btn-info">Edit</a> 
-                                                        <a href="#" class="btn btn-cta-primary">Publish</a> 
-                                                        <a href="#" class="btn btn-danger">Delete</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <hr/>
+		                            <div class="row">
+	                            		<div class="col-xs-4 pull-left">
+	                            			<img width="100%" height="100%" style="border:solid 1px #EEE;" src="assets/images/products/beauty.jpg" />
+	                            			<button class="btn btn-danger"  style="margin-top:3px;">&#8358;5,000</button>
+		                            	</div>
+		                            	<div class="col-xs-8">
+		                            		<h4 style="color:#4A4A4A">Product Description</h4>
+		                            		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+		                            		<div class="row">
+			                            		<div class="col-md-12 pull-right">
+			                            			<button class="btn btn-cta-primary pull-right">Make Payment</button>
+			                            			<button style="margin-right:3px;" class="btn btn-info pull-right">Read More</button>
+			                            		</div>
+			                            	</div>
+		                            	</div>
+		                            </div>
+		                            <hr/>
+                            	</div>
+                            	<div class="col-md-3 product-ads">
+                            		<div class="col-md-12"><h5>Related Ads</h5></div>
+                            		<hr/>
+                            		<div class="col-md-12 related-ad">
+                                        <img width="100%" src="assets/images/products/watch2.jpg">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                        <p></p>
+                                        <p><a href="" class="btn btn-info">View Product</a></p>
                                     </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-3">
-                                    <div class="thumbnail">
-                                        <img id="product-image" src="assets/images/products/watch.jpeg" width="150px" height="150px" alt="">
-                                        <div class="caption">
-                                            <h3>Feature Label</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p class="pull-right">
-                                                        <a href="products_edit.html" class="btn btn-info">Edit</a> 
-                                                        <a href="#" class="btn btn-cta-primary">Publish</a> 
-                                                        <a href="#" class="btn btn-danger">Delete</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    
+                                    <div class="col-md-12 related-ad">
+                                        <img width="100%" src="assets/images/products/watch3.jpeg">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                        <p></p>
+                                        <p><a href="" class="btn btn-info">View Product</a></p>
                                     </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-3">
-                                    <div class="thumbnail">
-                                        <img id="product-image" src="assets/images/products/beauty.jpg" width="150px" height="150px" alt="">
-                                        <div class="caption">
-                                            <h3>Feature Label</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p class="pull-right">
-                                                        <a href="products_edit.html" class="btn btn-info">Edit</a> 
-                                                        <a href="#" class="btn btn-cta-primary">Publish</a> 
-                                                        <a href="#" class="btn btn-danger">Delete</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    
+                                    <div class="col-md-12 related-ad">
+                                        <img width="100%" src="assets/images/products/watch4.jpg">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                        <p></p>
+                                        <p><a href="" class="btn btn-info">View Product</a></p>
                                     </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-3">
-                                    <div class="thumbnail">
-                                        <img id="product-image" src="assets/images/products/gel.jpg" width="150px" height="150px" alt="">
-                                        <div class="caption">
-                                            <h3>Feature Label</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p class="pull-right">
-                                                        <a href="products_edit.html" class="btn btn-info">Edit</a> 
-                                                        <a href="#" class="btn btn-cta-primary">Publish</a> 
-                                                        <a href="#" class="btn btn-danger">Delete</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-3">
-                                    <div class="thumbnail">
-                                        <img id="product-image" src="assets/images/products/gel.jpg" width="150px" height="150px" alt="">
-                                        <div class="caption">
-                                            <h3>Feature Label</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p class="pull-right">
-                                                        <a href="products_edit.html" class="btn btn-info">Edit</a> 
-                                                        <a href="#" class="btn btn-cta-primary">Publish</a> 
-                                                        <a href="#" class="btn btn-danger">Delete</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            	</div>
                             </div>
                         </div>
-                        <!-- /.panel-body -->                  <!-- /.panel -->
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
                 </div>
             </div>
             <!-- /.row -->
@@ -420,58 +436,13 @@
         </div>
         <!-- /#page-wrapper -->
 
-        <section class="products_modal">
-            <div class="modal fade modal-manip" id="addNewProductModal" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog modal-md">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h5 style="color:#074f66" class="modal-title" id="exampleModalLabel">Add a new product</h5>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group col-md-6">
-                        <!-- <label for="email" class="control-label">Email:</label> -->
-                        <input type="text" class="form-control" id="product-name" placeholder="Product Name">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <!-- <label for="password" class="control-label">Password:</label> -->
-                        <input type="text" class="form-control" id="product-price" placeholder="Price">
-                      </div>
-                      <div class="form-group col-md-12">
-                        <!-- <label for="password" class="control-label">Password:</label> -->
-                        <select class="form-control" id="select-product-category" style="width:100%;">
-                            <option value="">Select a Product Category</option>
-                            <option value="">Fashion and Livestyle</option>
-                            <option value="">Entertainment</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-md-12">
-                        <input type="file">
-                      </div>
-                      <div class="form-group col-md-12">
-                        <!-- <label for="password" class="control-label">Password:</label> -->
-                        <textarea class="form-control" placeholder="description"></textarea>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-                    <a href="products.html" class="btn btn-cta-primary">Add Product</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </section>
-
     </div>
     <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>    
     <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
-    <script type="text/javascript" src="assets/js/metisMenu.min.js"></script>   
+    <script type="text/javascript" src="assets/js/metisMenu.min.js"></script> 
     <script type="text/javascript" src="assets/js/select.js"></script>    
     <script type="text/javascript" src="assets/js/main.js"></script> 
 </body>
