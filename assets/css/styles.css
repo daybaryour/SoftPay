@@ -23,6 +23,9 @@ a {
   background: #22364D;
   color:#EEE;
 }
+.hide {
+    display: none;
+}
 #wrapper {
     width: 100%;
 }

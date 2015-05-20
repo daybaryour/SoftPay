@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->    
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/select.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -199,11 +199,11 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li>
-                            <a href="index.html"><i class="fa fa-credit-card fa-fw"></i> Merchant Account<span class="fa arrow"></span></a>
+                        <li class="active">
+                            <a href="index.html"><i class="fa fa-credit-card fa-fw"></i> Personal Account<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                            	<li>
-                                    <a href="dashboard_merchant.html">Transactions</a>
+                                <li>
+                                    <a href="dashboard.html">Transactions</a>
                                 </li>
                                 <li>
                                     <a href="#">Fund Wallet</a>
@@ -219,32 +219,11 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="active">
-                            <a href="#"><i class="fa fa-money fa-fw"></i> Merchant Activity<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="products.html">Product Setup</a>
-                                </li>
-                                <li>
-                                    <a href="#">Manage Products</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Admin<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Manage Accounts</a>
-                                </li>
-                                <li>
-                                    <a href="#">Manage Users</a>
-                                </li>
-                                <li>
-                                    <a href="#">Manage Cards</a>
-                                </li>
-                                <li>
-                                    <a href="#">Manage Approval paths</a>
+                                    <a href="#">Manage Personal Accounts</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -284,93 +263,62 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="clearfix"></div>
-                    <h3 class="page-header pull-left" style="font-size:26px;margin-top:45px;border-bottom:none;">Receive Money</h3>
-                    <a href="dashboard.html" class="switch-account pull-right btn btn-cta-primary"><i class="fa fa-exchange"></i> Switch to Personal</a>
+                    <h2 class="page-header pull-left">Dashboard</h2>
+                    <a href="dashboard_merchant.html" class="switch-account pull-right btn btn-danger"><i class="fa fa-exchange"></i> Switch to Merchant</a>
                     
                 </div>
-
                 <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
+             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <!-- /.panel-heading -->
                         <div class="panel-body" id="products-panel">
-                                    
+                            <div class="col-xs-12">
+                                <a class="btn btn-success pull-right" data-toggle="modal" data-target="#addNewProductModal"><i class="fa fa-plus"></i> Add new Bank Account</a>
+                            </div>
+                            <hr/>
                             <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-10" style="border-right:solid 1px #D4D4D4;">
-                                    <div class="row">
-                                        <div class="form-group col-xs-12 col-md-6">
-                                            <label for="client-name">Client's Name</label>
-                                            <input value="" type="text" class="form-control" id="client-name" placeholder="Enter Client Name or Select existing client from contact list">
-                                        </div>
-                                        <div class="form-group col-xs-12 col-md-5">
-                                            <label for="client-mail">Client's Email</label>
-                                            <input value="" type="text" class="form-control" id="product-name" placeholder="Enter Client Email or select from contact list">
-                                        </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div id="no-more-tables" class="dataTable_wrapper">
+                                        <table class="col-md-12 table-bordered table-striped table-condensed cf table table-hover" id="dataTables-example">
+                                            <thead class="cf">
+                                                <tr>
+                                                    <th>Account Name</th>
+                                                    <th>Account No</th>
+                                                    <th>Bank</th>
+                                                    <th>Account Type</th>
+                                                    <th>Date Created</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="">
+                                                    <td data-title="Account Name">Olusholape Abidakun</td>
+                                                    <td data-title="Account No">00083607438</td>
+                                                    <td data-title="Bank">Diamond</td>
+                                                    <td data-title="Account Type" >Savings</td>
+                                                    <td data-title="Date">20-04-2015</td>
+                                                    <td data-title="Actions" style="position:relative">
+                                                        <a class="btn btn-xs btn-info" style="margin-right:3px;">Manage</a>  
+                                                        <a class="btn btn-xs btn-danger ">Unlink</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td data-title="Account Name">Jumoke Oribogunje</td>
+                                                    <td data-title="Account No">00083607438</td>
+                                                    <td data-title="Bank">Sterling</td>
+                                                    <td data-title="Account Type" >Current</td>
+                                                    <td data-title="Date">20-04-2015</td>
+                                                    <td data-title="Actions" style="position:relative">
+                                                        <a class="btn btn-xs btn-info" style="margin-right:3px;">Manage</a>  
+                                                        <a class="btn btn-xs btn-danger">Unlink</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="row col-md-12">
-                                        <h4>Add Item(s) to receive money for</h4>
-                                        <form id="item-form">
-                                            <div class="row hide" id="invoice-items-row">
-                                              <div class="form-group col-xs-12 col-md-6">
-                                                <!-- <label for="exampleInputName2">Name</label> -->
-                                                <input value="" type="text" class="form-control" id="product-name" placeholder="Description of service or product">
-                                              </div>
-                                              <div class="form-group col-xs-6 col-md-2 pull-left">
-                                                <!-- <label for="exampleInputEmail2">Email</label> -->
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">₦</span>
-                                                    <input value="" type="text" class="form-control" id="item-rate" placeholder="Rate">
-                                                </div>
-                                              </div>
-                                              <div class="form-group col-xs-6 col-md-2 pull-left">
-                                                <!-- <label for="exampleInputEmail2">Email</label> -->
-                                                <input value="1" type="number" class="form-control" id="item-qty" placeholder="Quantity">
-                                              </div>
-                                              <div class="form-group col-xs-3 col-md-2 pull-right">
-                                                <!-- <label for="exampleInputEmail2">Email</label> -->
-                                                <button id="item-price" class="btn btn-info">₦0</button>
-                                                <span style="font-size:18px;" class=""><i id="delete-invoice-item" class="fa fa-close pull-right"></i></span>
-                                              </div>
-                                            </div>
-                                            <div class="row" id="invoice-items-row">
-                                              <div class="form-group col-xs-12 col-md-6">
-                                                <!-- <label for="exampleInputName2">Name</label> -->
-                                                <input value="" type="text" class="form-control" id="product-name" placeholder="Description of service or product">
-                                              </div>
-                                              <div class="form-group col-xs-6 col-md-2 pull-left">
-                                                <!-- <label for="exampleInputEmail2">Email</label> -->
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">₦</span>
-                                                    <input value="" type="text" class="form-control" id="item-rate" placeholder="Rate">
-                                                </div>
-                                              </div>
-                                              <div class="form-group col-xs-6 col-md-2 pull-left">
-                                                <!-- <label for="exampleInputEmail2">Email</label> -->
-                                                <input value="1" type="number" class="form-control" id="item-qty" placeholder="Quantity">
-                                              </div>
-                                              <div class="form-group col-xs-3 col-md-2 pull-right">
-                                                <!-- <label for="exampleInputEmail2">Email</label> -->
-                                                <button id="item-price" class="btn btn-info">₦0</button>
-                                                <span style="font-size:18px;" class=""><i id="delete-invoice-item" class="fa fa-close pull-right"></i></span>
-                                              </div>
-                                            </div>
-                                        </form>
-                                        <hr/>
-                                        <div id="add-new-item" class="">
-                                            <p class="col-md-12 btn btn-cta-primary"><i class="fa fa-plus"></i> Add New Item</p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div style="margin-top:10px;" class="pull-right">
-                                            <span>TOTAL </span> <button id="total-price" class="btn btn-success">₦0</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <button style="margin-bottom:5px;" data-toggle="modal" data-target="#addNewProductModal" class="btn btn-primary">Preview and Send</button>
-                                    <button style="margin-bottom:5px;"  class="btn btn-default">Download as PDF</button>
                                 </div>
                             </div>
                         </div>
@@ -382,104 +330,13 @@
         </div>
         <!-- /#page-wrapper -->
 
-        <section class="products_modal">
-            <div class="modal fade modal-manip" id="addNewProductModal" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h5 style="color:#074f66" class="modal-title" id="">INVOICE</h5>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                        <div class="col-sm-12">
-                            <h3 style="padding:10px 15px;background:#F5F5F5;font-size:20px;">INVOICE NO: 03948893093</h3>
-                        </div>
-                        <div class="col-sm-6">
-                          
-                          <div class="">
-                            <h5>Sender:</h5>
-                            <h4>Adewumi Adebayo</h4>
-                          </div>
-                          <div class="">
-                            <h5>Client:</h5>
-                            <h4>Shola Agbabiaka</h4>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 ">
-                            <div class="row" style="padding-top:20px;">
-                                <div class="col-md-12">
-                                    <p><span style="font-weight:bold;margin-left:15px;">Date: </span>May 20 2015</p>
-                                    <p><span style="font-weight:bold;margin-left:15px;">Due Date: </span>May 28 2015</p>
-                                    <p style="padding:10px 15px;background:#F5F5F5;font-size:20px;" class=""><span style="font-weight:bold">Balance Due: </span>157,500</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div id="no-more-tables" class="dataTable_wrapper">
-                                <table class="col-md-12 table-bordered table-striped table-condensed cf table table-hover" id="dataTables-example">
-                                    <thead class="cf">
-                                        <tr>
-                                            <th>Item</th>
-                                            <th>Quantity</th>
-                                            <th>Rate</th>
-                                            <th>Amount</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="">
-                                            <td data-title="Item">White Vest</td>
-                                            <td data-title="Quantity">3</td>
-                                            <td data-title="Rate">2500</td>
-                                            <td data-title="Amount" >7500</td>
-                                            </td>
-                                        </tr>
-                                        <tr class="">
-                                            <td data-title="Item">Dell Laptop</td>
-                                            <td data-title="Quantity">1</td>
-                                            <td data-title="Rate">Sterling</td>
-                                            <td data-title="Amount" >150000</td>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <p class="pull-right">SubTotal: 157,500.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <p class="pull-right">Total: 157,500. </p>
-                                </div>            
-                            </div>
-                        </div>
-                    </form>
-                  </div>
-                  
-                  <div class="col-md-12 modal-footer">
-                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-                    <a href="receive_money.html" class="btn btn-default">Back to editing</a>
-                    <a href="receive_money.html" class="btn btn-danger">Delete Invoice</a>
-                    <a href="receive_money.html" class="btn btn-cta-primary">Send</a>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-            </div>
-        </section>
-
     </div>
     <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>    
     <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
-    <script type="text/javascript" src="assets/js/metisMenu.min.js"></script>   
-    <script type="text/javascript" src="assets/js/select.js"></script>    
+    <script type="text/javascript" src="assets/js/metisMenu.min.js"></script>    
     <script type="text/javascript" src="assets/js/main.js"></script> 
 </body>
 </html>
